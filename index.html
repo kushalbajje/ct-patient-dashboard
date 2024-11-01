@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Care Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 1. Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="logo-container">
+            <img src="assets/images/TestLogo.svg" alt="Tech.Care">
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="icon-overview">
+                    <img src="assets/images/home_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </i>
+                <span>Overview</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="icon-patients">
+                    <img src="assets/images/group_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </i>
+                <span>Patients</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="icon-schedule">
+                    <img src="assets/images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </i>
+                <span>Schedule</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="icon-message">
+                    <img src="assets/images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </i>
+                <span>Message</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="icon-transactions">
+                    <img src="assets/images/credit_card_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                </i>
+                <span>Transactions</span>
+            </a>
+        </div>
+        
+        <div class="doctor-profile">
+            <img src="assets/images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="Dr. Jose Simmons">
+            <div class="doctor-info">
+                <span class="name">Dr. Jose Simmons</span>
+                <span class="role">General Practitioner</span>
+            </div>
+            <button class="settings-btn">⚙️</button>
+        </div>
+    </nav>
+
+    <!-- 2. Main Content Container -->
+    <div class="main-container">
+        <!-- 3. Left Sidebar - Patient List -->
+        <aside class="patients-sidebar">
+            <div class="sidebar-header">
+                <h2>Patients</h2>
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="patients-list">
+                <!-- Patient items will be populated via JavaScript -->
+            </div>
+        </aside>
+
+        <!-- 4. Center Content - Diagnosis History -->
+        <main class="main-content">
+            <h1>Diagnosis History</h1>
+            
+            <!-- Blood Pressure Chart Section -->
+            <div class="bp-chart-container">
+                <!-- Chart will be implemented with Chart.js -->
+            </div>
+
+            <!-- Vitals Grid -->
+            <div class="vitals-grid">
+                <!-- Three cards for Respiratory Rate, Temperature, Heart Rate -->
+            </div>
+
+            <!-- Diagnostic List -->
+            <div class="diagnostic-list">
+                <h2>Diagnostic List</h2>
+                <table class="diagnosis-table">
+                    <!-- Table content -->
+                </table>
+            </div>
+        </main>
+
+        <!-- 5. Right Sidebar - Patient Details -->
+        <aside class="patient-details">
+            <div class="patient-profile">
+                <!-- Selected patient details -->
+            </div>
+            <div class="lab-results">
+                <h2>Lab Results</h2>
+                <!-- Lab results list -->
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
