@@ -1,0 +1,112 @@
+:root {
+    /* Color Variables */
+    --color-white: #FFFFFF;
+    --color-active: #01F0D0;
+    --color-text: #333333;
+    --color-text-secondary: #666666;
+}
+
+/* Navigation Bar Container */
+.top-nav {
+    position: relative;
+    margin: 18px;
+    height: 72px;
+    background: var(--color-white) 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 32px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    border-radius: 41px;
+    transition: all 0.3s ease;
+}
+
+.nav-item.active {
+    background: var(--color-active);
+    color: var(--color-text);
+    height: 41px;
+    width: 122px;
+    justify-content: center;
+}
+
+.doctor-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doctor-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-info .name {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.doctor-info .role {
+    color: var(--color-text-secondary);
+    font-size: 12px;
+}
+
+.settings-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.nav-item i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:not(.active):hover {
+    background: rgba(1, 240, 208, 0.1);
+}
+
